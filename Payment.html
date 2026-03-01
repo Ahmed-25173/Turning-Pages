@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Turning Pages</title>
+  <link rel="stylesheet" href="Payment.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="logo">
+    <a href="home.html" aria-label="Turning Pages home">
+      <img src="headerimg/Website logo.jpg" alt="Turning Pages logo" class="logo-img">
+    </a>
+    <p class="site-title">Turning Pages</p>
+  </div>
+  <nav class="navbar" aria-label="Primary">
+    <ul>
+      <li><a href="home.html"><img src="headerimg/homeicon.png" alt="" aria-hidden="true">Home</a></li>
+      <li><a href="catogories.html"><img src="headerimg/categoryicon.png" alt="" aria-hidden="true">Categories</a></li>
+      <li><a href="Shopping Cart.html"><img src="headerimg/carticon.png" alt="" aria-hidden="true">Shopping Cart</a></li>
+      <li><a href="Payment.html"><img src="headerimg/checkouticon.png" alt="" aria-hidden="true">Checkout</a></li>
+    </ul>
+  </nav>
+</header>
+  <main id="main-content" class="page-main">
+    <section class="payment-container" aria-labelledby="payment-heading">
+      <h1 id="payment-heading">Enter Payment Details</h1>
+      <form action="#" method="post">
+        <div class="form-group"><label for="name">Full Name</label><input type="text" id="name" name="name" placeholder="Zoya Sumbul" autocomplete="name" required></div>
+        <div class="form-group"><label for="contact">Contact Number</label><input type="tel" id="contact" name="contact" placeholder="0342-7329424" autocomplete="tel" required></div>
+        <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="example@gmail.com" autocomplete="email" required></div>
+        <div class="form-group"><label for="address">Shipping Address</label><textarea id="address" name="address" rows="4" placeholder="House no: XXX, X Block, X City, X Province, X Country" autocomplete="street-address" required></textarea></div>
+        <div class="form-group"><label for="payment">Payment Method</label><select id="payment" name="payment" required><option value="credit-card">Credit Card</option><option value="paypal">PayPal</option><option value="cod">Cash on Delivery</option></select></div>
+        <div class="form-actions"><button class="btn" type="submit">Place Order</button></div>
+      </form>
+    </section>
+  </main>
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-content">
+    <address>
+      <p><img src="footerimg/callicon.png" alt="" aria-hidden="true"> 0333 111 1234</p>
+      <p><img src="footerimg/mailicon.png" alt="" aria-hidden="true"> mail@turningpages.com</p>
+      <p><img src="footerimg/locationicon.png" alt="" aria-hidden="true"> 123 Street, BookLand</p>
+    </address>
+    <p><a href="#"><img src="footerimg/fbicon.png" alt="" aria-hidden="true"> TurningPages</a></p>
+    <p><a href="#"><img src="footerimg/twittericon.png" alt="" aria-hidden="true"> TurningPages</a></p>
+  </div>
+</footer>
+</body>
+</html>

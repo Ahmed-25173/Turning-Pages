@@ -1,0 +1,214 @@
+﻿* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #fff8dc;
+  --surface: #ffffff;
+  --text: #1f1f1f;
+  --brand: #000;
+  --brand-hover: #333;
+  --accent: #ffcc00;
+  --border: #ddd;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--brand);
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+.site-header {
+  background: var(--brand);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.logo-img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.navbar a:hover,
+.navbar a:focus-visible {
+  color: var(--accent);
+}
+
+.navbar img {
+  width: 18px;
+  height: 18px;
+}
+
+.page-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2rem;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro h1 {
+  margin: 0;
+}
+
+.intro p {
+  max-width: 720px;
+  margin: 0.75rem auto 0;
+}
+
+.featured-books {
+  margin-top: 1.5rem;
+}
+
+.featured-books h2 {
+  text-align: center;
+  margin: 0 0 1rem;
+}
+
+.book-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.book-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.75rem;
+  height: 100%;
+  text-align: center;
+}
+
+.book-card img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.book-card h3 {
+  margin: 0.7rem 0 0.4rem;
+  font-size: 1rem;
+}
+
+.book-card a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.book-card a:hover,
+.book-card a:focus-visible {
+  color: var(--brand-hover);
+  text-decoration: underline;
+}
+
+.book-card p {
+  margin: 0;
+}
+
+.site-footer {
+  background: var(--brand);
+  color: #fff;
+  padding: 0.75rem 1rem;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-content address {
+  font-style: normal;
+}
+
+.footer-content p {
+  margin: 0.35rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-content a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-content a:hover,
+.footer-content a:focus-visible {
+  color: var(--accent);
+}
+
+.footer-content img {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    justify-content: center;
+  }
+
+  .navbar ul {
+    justify-content: center;
+  }
+}

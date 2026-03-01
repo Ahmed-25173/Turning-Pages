@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart - Turning Pages</title>
+  <link rel="stylesheet" href="Shopping.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="logo">
+    <a href="home.html" aria-label="Turning Pages home">
+      <img src="headerimg/Website logo.jpg" alt="Turning Pages logo" class="logo-img">
+    </a>
+    <p class="site-title">Turning Pages</p>
+  </div>
+  <nav class="navbar" aria-label="Primary">
+    <ul>
+      <li><a href="home.html"><img src="headerimg/homeicon.png" alt="" aria-hidden="true">Home</a></li>
+      <li><a href="catogories.html"><img src="headerimg/categoryicon.png" alt="" aria-hidden="true">Categories</a></li>
+      <li><a href="Shopping Cart.html"><img src="headerimg/carticon.png" alt="" aria-hidden="true">Shopping Cart</a></li>
+      <li><a href="Payment.html"><img src="headerimg/checkouticon.png" alt="" aria-hidden="true">Checkout</a></li>
+    </ul>
+  </nav>
+</header>
+  <main id="main-content" class="page-main">
+    <section class="cart-container" aria-labelledby="cart-heading">
+      <h1 id="cart-heading">Shopping Cart</h1>
+      <ul class="cart-list">
+        <li class="cart-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaMXGyNxPDjCM22oZtPz7hCf3naLd07gsj7w&s" alt="Cover of The Great Gatsby"><div class="item-details"><h2>Great Gatsby</h2><p class="price">Price: <span>$10</span></p><label for="quantity1">Quantity:</label><input type="number" id="quantity1" min="0" value="1"></div><button class="remove-btn" type="button">Remove</button></li>
+        <li class="cart-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVVA1W3UDGSLRiVZKANNNqMD_6gfRxRjrGCA&s" alt="Cover of The Alchemist"><div class="item-details"><h2>Alchemist</h2><p class="price">Price: <span>$15</span></p><label for="quantity2">Quantity:</label><input type="number" id="quantity2" min="0" value="1"></div><button class="remove-btn" type="button">Remove</button></li>
+        <li class="cart-item"><img src="https://www.libertybooks.com/image/cache/01%20ZEESHAN/1-100/Sapiens-A-Brief-History-of-Humankind-313x487.jpg?q6" alt="Cover of Sapiens"><div class="item-details"><h2>Sapiens</h2><p class="price">Price: <span>$12</span></p><label for="quantity3">Quantity:</label><input type="number" id="quantity3" min="0" value="1"></div><button class="remove-btn" type="button">Remove</button></li>
+        <li class="cart-item"><img src="https://1min1book.com/cdn/shop/products/51UNhVBxeWL.jpg?v=1686518887&width=713" alt="Cover of On the Origin of Species"><div class="item-details"><h2>On the Origin</h2><p class="price">Price: <span>$20</span></p><label for="quantity4">Quantity:</label><input type="number" id="quantity4" min="0" value="1"></div><button class="remove-btn" type="button">Remove</button></li>
+        <li class="cart-item"><img src="https://media.bookcorner.shop/uploads/original/6146f465527f41632040037.jpg" alt="Cover of A Brief History of Time"><div class="item-details"><h2>A Brief History of Time</h2><p class="price">Price: <span>$8</span></p><label for="quantity5">Quantity:</label><input type="number" id="quantity5" min="0" value="1"></div><button class="remove-btn" type="button">Remove</button></li>
+        <li class="cart-item"><img src="https://img1.od-cdn.com/ImageType-400/0111-1/B0B/FCF/71/%7BB0BFCF71-CE6D-4CA8-BC31-8EFC004F2772%7DImg400.jpg" alt="Cover of Cosmos"><div class="item-details"><h2>Cosmos</h2><p class="price">Price: <span>$18</span></p><label for="quantity6">Quantity:</label><input type="number" id="quantity6" min="0" value="1"></div><button class="remove-btn" type="button">Remove</button></li>
+        <li class="cart-item"><img src="https://cdn2.penguin.com.au/covers/400/9780141372563.jpg" alt="Cover of The Da Vinci Code"><div class="item-details"><h2>Da Vinci Code</h2><p class="price">Price: <span>$25</span></p><label for="quantity7">Quantity:</label><input type="number" id="quantity7" min="0" value="1"></div><button class="remove-btn" type="button">Remove</button></li>
+        <li class="cart-item"><img src="https://cdn.kobo.com/book-images/fcdfdec0-1dc6-480e-8fa7-a1d4fb77e0aa/353/569/90/False/the-big-sleep-25.jpg" alt="Cover of The Big Sleep"><div class="item-details"><h2>The Big Sleep</h2><p class="price">Price: <span>$30</span></p><label for="quantity8">Quantity:</label><input type="number" id="quantity8" min="0" value="1"></div><button class="remove-btn" type="button">Remove</button></li>
+      </ul>
+      <div class="cart-actions"><a href="home.html" class="btn continue-btn">Continue Shopping</a><a href="Payment.html" class="btn checkout-btn">Proceed to Checkout</a></div>
+    </section>
+  </main>
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-content">
+    <address>
+      <p><img src="footerimg/callicon.png" alt="" aria-hidden="true"> 0333 111 1234</p>
+      <p><img src="footerimg/mailicon.png" alt="" aria-hidden="true"> mail@turningpages.com</p>
+      <p><img src="footerimg/locationicon.png" alt="" aria-hidden="true"> 123 Street, BookLand</p>
+    </address>
+    <p><a href="#"><img src="footerimg/fbicon.png" alt="" aria-hidden="true"> TurningPages</a></p>
+    <p><a href="#"><img src="footerimg/twittericon.png" alt="" aria-hidden="true"> TurningPages</a></p>
+  </div>
+</footer>
+</body>
+</html>
